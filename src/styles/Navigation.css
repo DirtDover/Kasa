@@ -1,0 +1,12 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 10%;
+}
+
+.elem-nav {
+    color: red;
+    text-decoration: none;
+    
+}
