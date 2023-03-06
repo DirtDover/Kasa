@@ -8,9 +8,7 @@
     align-items: center;
 }
 
-a {
-    text-decoration: underline;
-}
+
 a:visited {
     color: #FF6060;
 }
@@ -29,6 +27,7 @@ margin-top: 0px;
     justify-content: center;
 }
 .lien-error{
+    text-decoration: underline;
     font-size: 18px;
     margin-top: 100px;
 }
