@@ -4,13 +4,13 @@ import '../styles/Navigation.css'
 
 const Navigation = () => {
     return (
-        <div className='navigation'>
-            <ul>
-                <NavLink to ="/">
-                    <li className='elem-nav'>Acceuil</li>
+        <div className='navigation-container' >
+            <ul className='navigation'>
+                <NavLink to ="/" className={(nav) =>(nav.isActive ? "nav-active" : "")}>
+                    <li>Acceuil</li>
                 </NavLink>
-                <NavLink to ="/about">
-                    <li className='elem-nav'>A Propos</li>
+                <NavLink to ="/about" className={(nav) =>(nav.isActive ? "nav-active" : "")}>
+                    <li>A Propos</li>
                 </NavLink>
             </ul>
         </div>
