@@ -19,12 +19,12 @@ a {
     text-decoration: none;
 }
 li {
-    color: red;
+    color: #ff6060;
     text-decoration: none;
     list-style-type: none; 
 }
 .nav-active {
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid #ff6060;
     }
            
 
