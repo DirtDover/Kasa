@@ -1,0 +1,31 @@
+.section1{
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    width: 95%;
+    height: 10%;
+    border-radius: 25px;
+    filter: brightness(50%);
+    
+    
+}
+.img-section1{
+    position: relative;
+    margin-left: 50px;
+    width: 95%;
+    height: 10%;
+    border-radius: 25px;
+}
+
+.title-section1{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    color: white;
+    width: 90%;
+    
+}
