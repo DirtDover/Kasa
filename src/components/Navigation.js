@@ -7,10 +7,10 @@ const Navigation = () => {
         <div className='navigation-container' >
             <ul className='navigation'>
                 <NavLink to ="/" className={(nav) =>(nav.isActive ? "nav-active" : "")}>
-                    <li>Acceuil</li>
+                    <li className='elem-nav'>Acceuil</li>
                 </NavLink>
                 <NavLink to ="/about" className={(nav) =>(nav.isActive ? "nav-active" : "")}>
-                    <li>A Propos</li>
+                    <li className='elem-nav'>A Propos</li>
                 </NavLink>
             </ul>
         </div>
