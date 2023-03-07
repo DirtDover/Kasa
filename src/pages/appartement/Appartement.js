@@ -6,6 +6,7 @@ const appartement = () => {
     return (
         <div>
             <Banner />
+            
             <Footer />
             
         </div>
