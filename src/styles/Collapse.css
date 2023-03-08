@@ -1,0 +1,38 @@
+.btn-collapse{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #FF6060 ;
+    border-radius: 5px;
+    border-color: #FF6060;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+.collapse-container{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.collapse-content{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+.arrow{
+
+    transform: rotate(180deg);
+    margin-right: 30px;
+
+}
+
+.arrow-up{
+    margin-right: 30px;
+}
