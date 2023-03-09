@@ -1,6 +1,7 @@
 
 import ArrowRight from '../assets/chevron_carousel_right.png'
 import ArrowLeft from '../assets/chevron_carousel_left.png'
+import '../styles/Slider.css'
 import { useState } from 'react'
 
 export default function Slider({imageSlider}) {
@@ -20,20 +21,20 @@ export default function Slider({imageSlider}) {
     }
 
     return (
-        <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
+        <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='slider-container'>
             {imageSlider.length > 1 && 
                 <>
                     <img 
-                        className='carousel_arrow carousel_arrow_right' 
+                        className='arrow arrow-right' 
                         src={ArrowRight} 
                         alt="show next slider" 
-                        onClick={nextSlide}
+                        onClick={prevSlide}
                     />
                     <img 
-                        className='carousel_arrow carousel_arrow_left' 
+                        className='arrow arrow-left' 
                         src={ArrowLeft} 
                         alt="show previous slider" 
-                        onClick={prevSlide}
+                        onClick={nextSlide}
                     />
                     <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
                 </>

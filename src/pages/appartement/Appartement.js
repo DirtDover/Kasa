@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import datas from '../../datas/appartList';
-import Slider from '../../components/Slider'
+import Slider from '../../components/Slider';
+import './Appartement.css'
 
 const Appartement = () => {
 
@@ -22,7 +23,7 @@ useEffect(()=> {
 
 
     return (
-        <div>
+        <div className='container-gen'>
             <Banner />
             <Slider imageSlider={imageSlider} />
             <Footer />
