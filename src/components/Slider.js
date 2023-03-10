@@ -24,6 +24,7 @@ export default function Slider({imageSlider}) {
         <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='slider-container'>
             {imageSlider.length > 1 && 
                 <>
+                <div className='arrow-container'>
                     <img 
                         className='arrow arrow-right' 
                         src={ArrowRight} 
@@ -36,6 +37,7 @@ export default function Slider({imageSlider}) {
                         alt="show previous slider" 
                         onClick={nextSlide}
                     />
+                 </div>   
                     <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
                 </>
             } 

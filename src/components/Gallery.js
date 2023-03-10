@@ -7,7 +7,7 @@ const Gallery = () => {
     
  
  return (
-<main>
+<main className='gallery-container'>
     <div className='gallery'>
         {datas.map((data) =>(
             <Card key={data.id} id={data.id} title={data.title} cover={data.cover} /> 
