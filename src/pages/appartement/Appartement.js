@@ -30,20 +30,22 @@ const equipement = currentAppart[0].equipments;
             <Slider imageSlider={imageSlider} />
             <div className='infos-container'>
                 <div className='titre-localisation-cat-container'>
-                    <h2>{currentAppart[0].title}</h2>
-                    <h3>{currentAppart[0].location}</h3>
-                    <div className='tag'>
+                    <h1 className='title'>{currentAppart[0].title}</h1>
+                    <h3 className='location'>{currentAppart[0].location}</h3>
+                    <div className='tag-container'>
 							{currentAppart[0].tags.map((tag, index) => {
 								return (
-									<button key={index}>{tag}</button>
+									<button className='tag' key={index}>{tag}</button>
 								)
 							})}
 						</div>
                 </div>
                 <div className='infos-host-container'>
-                    <img src={currentAppart[0].host.picture} alt="propriétaire" />
+                    <div className='infos-host'>
                     <h3>nom</h3>
                     <h3>prenom</h3>
+                    <img src={currentAppart[0].host.picture} alt="propriétaire" className='img-host' />
+                    </div>
                     <div>etoiles</div>
                 </div>
             </div>

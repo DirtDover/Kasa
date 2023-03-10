@@ -4,7 +4,7 @@
 }
 .infos-container{
     width: 90%;
-    height: 50%;
+    height: 20%;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
@@ -16,14 +16,43 @@
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin: 0;
+}
+.title{
+    color: #FF6060;
+}
+.location{
+    color: #FF6060;
+    margin-top: -20px;
 }
 
+.tag-container{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
 .tag{
-    width: 100%;
-    height: 20%;
+    border-radius: 25px;
+    background-color: #FF6060;
+    color: white;
+    border-style: none;
+    width: 23%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .infos-host-container{
-    
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.infos-host{
+display: flex;
+flex-direction: row;
+}
+.img-host{
+    border-radius: 75px;
 }
