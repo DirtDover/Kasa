@@ -12,7 +12,7 @@ const About = () => {
 		{
 			"id": "1",
 			"title": "Fiabilité",
-			"content": "Test1."
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid est dolore quasi quis vel unde deleniti facilis, accusamus excepturi vero ipsam aliquam. Fugit quidem animi aut distinctio ipsum corrupti."
 		},
 		{
 			"id": "2",
@@ -22,12 +22,12 @@ const About = () => {
 		{
 			"id": "3",
 			"title": "Service",
-			"content": "Test2"
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid est dolore quasi quis vel unde deleniti facilis, accusamus excepturi vero ipsam aliquam. Fugit quidem animi aut distinctio ipsum corrupti."
 		},
 		{
 			"id": "4",
 			"title": "Sécurité",
-			"content": "Test3."
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid est dolore quasi quis vel unde deleniti facilis, accusamus excepturi vero ipsam aliquam. Fugit quidem animi aut distinctio ipsum corrupti."
 		}
 	]
     return (

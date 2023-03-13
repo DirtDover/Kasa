@@ -12,7 +12,7 @@ const Collapse = ({title, content, id}) => {
             <img  className={visible ? 'arrow-up' : 'arrow'} src={arrow} alt="show content"  />
             </button>
             <div className='collapse-content'>
-                <p>{content}</p>
+                <p className='collapse-content-text'>{content}</p>
             </div>
         </div>
     ) : 

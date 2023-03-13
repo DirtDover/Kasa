@@ -5,7 +5,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     width: 90%;
-    height: 40%;
+    height: 50%;
     border-radius: 25px;
     background-position: center;
     background-size: cover;
@@ -16,7 +16,7 @@
     height: 20%;
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 200px;
 
 }
 .arrow{
@@ -29,4 +29,5 @@
 .slideCount{
     display: flex;
     justify-content: center;
+    color: white;
 }

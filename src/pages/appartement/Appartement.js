@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import datas from '../../datas/appartList';
 import Slider from '../../components/Slider';
 import Collapse from '../../components/Collapse'
+import greyStar from '../../assets/grey_star.png';
+import redStar from '../../assets/red_star.png';
 import './Appartement.css'
 
 const Appartement = () => {
@@ -21,7 +23,8 @@ useEffect(()=> {
 
 const description = currentAppart[0].description;
 const equipement = currentAppart[0].equipments;
-
+const name = currentAppart[0].host.name.split(' '); 
+const rating = currentAppart[0].rating;
 
 
     return (
@@ -42,15 +45,28 @@ const equipement = currentAppart[0].equipments;
                 </div>
                 <div className='infos-host-container'>
                     <div className='infos-host'>
-                    <h3>nom</h3>
-                    <h3>prenom</h3>
+                    <div className='name-container'>
+                    <h3 className='name'>{name[0]}</h3>
+                    <h3 className='name'>{name[1]}</h3>
+                    </div>
                     <img src={currentAppart[0].host.picture} alt="propriétaire" className='img-host' />
                     </div>
-                    <div>etoiles</div>
+                    <div className='stars'>{[...Array(5)].map((star, index) => {
+								const ratingValue = index + 1;
+								return (
+									<img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
+								)
+							})}</div>
                 </div>
             </div>
+           <div className='collapse-container-appartement'> 
             <Collapse title={'Description'} content={description}/>
-            <Collapse title={'Equipement'} content={equipement}/>
+             <Collapse title={'Equipement'} content={equipement.map((equipement, index)=>{
+                return (
+                    <li key={index}>{equipement}</li>
+                )
+             })}/>
+            </div>
             <Footer />
             
         </div>
