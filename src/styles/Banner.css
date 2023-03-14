@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
     height: 12%;
 }
 .logo{
@@ -14,3 +14,17 @@ margin-left: 50px;
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width=375px) {
+    .banner{
+        width: 100%;
+    }
+    .navigation-container{
+        width: 60%;
+    }
+}
+    
+
+    
+    
+    

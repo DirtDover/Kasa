@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {  useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import datas from '../../datas/appartList';
@@ -15,6 +15,14 @@ const[imageSlider, setImageSlider] = useState([])
 
 const idAppart = useParams('id').id;
 const currentAppart = datas.filter(data => data.id === idAppart)
+
+/*const navigate = useNavigate();
+   useEffect(() => {
+      let appart = datas.find((appart) => idAppart.id === appart.id);
+      if (appart !== idAppart) {
+         navigate("/error");
+      }
+   });*/
 
 useEffect(()=> {
     const currentAppart = datas.filter(data => data.id === idAppart);
