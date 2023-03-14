@@ -15,12 +15,17 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width=375px) {
+@media only screen and (max-width: 500px) {
     .banner{
-        width: 100%;
+        width: 95%;
+        justify-content: flex-start;
     }
-    .navigation-container{
-        width: 60%;
+    
+    .logo{
+  
+        width: 40%;
+    margin-left: 10px;
+    
     }
 }
     
