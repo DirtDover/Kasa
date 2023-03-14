@@ -16,6 +16,7 @@ const[imageSlider, setImageSlider] = useState([])
 const idAppart = useParams('id').id;
 const currentAppart = datas.filter(data => data.id === idAppart)
 
+
 /*const navigate = useNavigate();
    useEffect(() => {
       let appart = datas.find((appart) => idAppart.id === appart.id);
@@ -26,8 +27,13 @@ const currentAppart = datas.filter(data => data.id === idAppart)
 
 useEffect(()=> {
     const currentAppart = datas.filter(data => data.id === idAppart);
+    
+
     setImageSlider(currentAppart[0].pictures);
 },[idAppart])
+
+/*const appart = datas.find((appart) => idAppart.id === appart.id)
+if (appart.id !== idAppart) return <div>Error</div>*/
 
 const description = currentAppart[0].description;
 const equipement = currentAppart[0].equipments;
