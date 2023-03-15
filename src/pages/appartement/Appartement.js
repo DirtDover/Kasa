@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate,useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
+import Error from '../error/Error';
 import datas from '../../datas/appartList';
 import Slider from '../../components/Slider';
 import Collapse from '../../components/Collapse'
@@ -9,31 +10,22 @@ import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
 import './Appartement.css'
 
-const Appartement = () => {
+function Appartement  ()  {
 
 const[imageSlider, setImageSlider] = useState([])
 
-const idAppart = useParams('id').id;
+const idAppart = useParams().id;
+const navigate=useNavigate
+
 const currentAppart = datas.filter(data => data.id === idAppart)
-
-
-/*const navigate = useNavigate();
-   useEffect(() => {
-      let appart = datas.find((appart) => idAppart.id === appart.id);
-      if (appart !== idAppart) {
-         navigate("/error");
-      }
-   });*/
 
 useEffect(()=> {
     const currentAppart = datas.filter(data => data.id === idAppart);
-    
-
-    setImageSlider(currentAppart[0].pictures);
+    if (!datas.find((Obj)=>Obj.id===idAppart)){
+       
+       navigate ("Error");
+    } else (setImageSlider(currentAppart[0].pictures))
 },[idAppart])
-
-/*const appart = datas.find((appart) => idAppart.id === appart.id)
-if (appart.id !== idAppart) return <div>Error</div>*/
 
 const description = currentAppart[0].description;
 const equipement = currentAppart[0].equipments;

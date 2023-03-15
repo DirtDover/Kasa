@@ -32,7 +32,7 @@ const About = () => {
 	]
     return (
         
-        <div>
+        <div className='about-gen-container'>
             <Banner />
             <img src={about} alt='A propos' className='img-about' />
             <main className='main-about'>
