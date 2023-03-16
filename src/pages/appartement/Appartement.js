@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate,useParams } from 'react-router-dom';
+import {Navigate, redirect, useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import Error from '../error/Error';
@@ -15,25 +15,15 @@ function Appartement  ()  {
 const[imageSlider, setImageSlider] = useState([])
 
 const idAppart = useParams().id;
-const navigate=useNavigate
 
 const currentAppart = datas.filter(data => data.id === idAppart)
 
-useEffect(()=> {
-    const currentAppart = datas.filter(data => data.id === idAppart);
-    if (!datas.find((Obj)=>Obj.id===idAppart)){
-       
-       navigate ("Error");
-    } else (setImageSlider(currentAppart[0].pictures))
-},[idAppart])
+if (!currentAppart[0]) {
+    return <Navigate to='/*'></Navigate>
+}
 
-const description = currentAppart[0].description;
-const equipement = currentAppart[0].equipments;
-const name = currentAppart[0].host.name.split(' '); 
-const rating = currentAppart[0].rating;
-
-
-    return (
+    
+return (
         <div className='container-gen'>
             <Banner />
             <Slider imageSlider={imageSlider} />
@@ -52,22 +42,22 @@ const rating = currentAppart[0].rating;
                 <div className='infos-host-container'>
                     <div className='infos-host'>
                     <div className='name-container'>
-                    <h3 className='name'>{name[0]}</h3>
-                    <h3 className='name'>{name[1]}</h3>
+                    <h3 className='name'>{currentAppart[0].host.name.split(' ')[0]}</h3>
+                    <h3 className='name'>{currentAppart[0].host.name.split(' ')[1]}</h3>
                     </div>
                     <img src={currentAppart[0].host.picture} alt="propriétaire" className='img-host' />
                     </div>
                     <div className='stars'>{[...Array(5)].map((star, index) => {
 								const ratingValue = index + 1;
 								return (
-									<img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
+									<img key={index} src={ratingValue <= currentAppart[0].rating ? redStar : greyStar} alt="star" />
 								)
 							})}</div>
                 </div>
             </div>
            <div className='collapse-container-appartement'> 
-            <Collapse title={'Description'} content={description}/>
-             <Collapse title={'Equipement'} content={equipement.map((equipement, index)=>{
+            <Collapse title={'Description'} content={currentAppart[0].description}/>
+             <Collapse title={'Equipement'} content={currentAppart[0].equipments.map((equipement, index)=>{
                 return (
                     <li key={index}>{equipement}</li>
                 )
@@ -77,6 +67,7 @@ const rating = currentAppart[0].rating;
             
         </div>
     );
-};
+} 
+    
 
 export default Appartement;
