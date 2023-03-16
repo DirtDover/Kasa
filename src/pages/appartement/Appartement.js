@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import {Navigate, redirect, useParams } from 'react-router-dom';
+import React, {} from 'react';
+import {Navigate, useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-import Error from '../error/Error';
 import datas from '../../datas/appartList';
 import Slider from '../../components/Slider';
 import Collapse from '../../components/Collapse'
@@ -11,8 +10,6 @@ import redStar from '../../assets/red_star.png';
 import './Appartement.css'
 
 function Appartement  ()  {
-
-const[imageSlider, setImageSlider] = useState([])
 
 const idAppart = useParams().id;
 
@@ -26,7 +23,7 @@ if (!currentAppart[0]) {
 return (
         <div className='container-gen'>
             <Banner />
-            <Slider imageSlider={imageSlider} />
+            <Slider />
             <div className='infos-container'>
                 <div className='titre-localisation-cat-container'>
                     <h1 className='title'>{currentAppart[0].title}</h1>
