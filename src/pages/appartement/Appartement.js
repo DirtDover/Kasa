@@ -47,7 +47,7 @@ return (
                     <div className='stars'>{[...Array(5)].map((star, index) => {
 								const ratingValue = index + 1;
 								return (
-									<img key={index} src={ratingValue <= currentAppart[0].rating ? redStar : greyStar} alt="star" />
+									<img className='img-stars' key={index} src={ratingValue <= currentAppart[0].rating ? redStar : greyStar} alt="star" />
 								)
 							})}</div>
                 </div>

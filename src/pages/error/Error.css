@@ -33,6 +33,27 @@ margin-top: 0px;
     margin-bottom: 80px;
 }
 
+@media only screen and (max-width: 1300px){
+    
+    .error-404{
+        font-size: 200px;
+        line-height: 200px;
+        margin-top: 100px;
+   
+    }
+    .title-error{ 
+        font-size: 24px;
+        margin-left: 70px;
+        margin-top: 
+        50px;
+    }
+    .lien-error{
+        
+        font-size: 18px;
+     
+    }
+}
+
 @media only screen and (max-width: 500px){
     
     .error-404{
