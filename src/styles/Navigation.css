@@ -24,6 +24,7 @@ a {
     color: #ff6060;
     text-decoration: none;
     list-style-type: none; 
+    font-size: 24px;
 }
 .nav-active {
         border-bottom: 1px solid #ff6060;

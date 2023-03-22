@@ -31,6 +31,15 @@
     width: 90%;
     height: 100%;
     margin-left: 20px;
+    color: #FF6060;
+    font-size: 22px;
+}
+.collapse-content-text-appartement {
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+    color: #FF6060;
+    font-size: 18px;
 }
 .arrow{
 
