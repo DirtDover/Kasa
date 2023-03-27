@@ -4,7 +4,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+    margin-right: 20px;    
     
 }
 
@@ -72,9 +72,12 @@ a {
         .navigation-container{
             width: 60%;
             justify-content: flex-start;
+            margin-right: 0px;
+            
         }
         .elem-nav {
             font-size: 12px;
+        
             
         }
        

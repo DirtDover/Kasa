@@ -34,6 +34,17 @@
     color: white;
 }
 
+@media only screen and (max-width: 1000px){
+    
+    .arrow-container{
+        height: 13%;
+        margin-top: 230px;
+    
+    }
+   
+}
+
+
 @media only screen and (max-width: 500px){
     .slider-container{
        
@@ -53,6 +64,7 @@
        
         cursor: pointer;
         margin-left: 15px;
+        margin-right: 10px;
     
     }
 }
