@@ -28,9 +28,6 @@
     font-size: 48px;
     
 }
-.br {
-    display: none;
-}
 
 @media only screen and (max-width: 1300px) {
 
@@ -57,9 +54,7 @@
     font-size: 24px ;
     text-align: left;
     margin-left: 20px;
-    width: 90%; 
-}
-.br {
-    display: initial;
+    
+    
 }
 }
