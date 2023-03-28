@@ -3,7 +3,7 @@
     height: 40px;
     color: white;
     background-color: #FF6060 ;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #FF6060;
     border-style: none;
     display: flex;
@@ -81,6 +81,7 @@
       
         font-size: 13px;
         width: 100%;
+        border-radius: 5px;
     }
     .collapse-container{
         width: 100%;
