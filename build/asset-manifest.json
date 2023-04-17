@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Kasa/static/css/main.919d3c65.css",
-    "main.js": "/Kasa/static/js/main.f1be89c9.js",
+    "main.js": "/Kasa/static/js/main.45abc6ce.js",
     "static/media/about-background.png": "/Kasa/static/media/about-background.2697e30edefafc829c7e.png",
     "static/media/Background.png": "/Kasa/static/media/Background.0859f2356f8f8e7a13f9.png",
     "index.html": "/Kasa/index.html",
     "main.919d3c65.css.map": "/Kasa/static/css/main.919d3c65.css.map",
-    "main.f1be89c9.js.map": "/Kasa/static/js/main.f1be89c9.js.map"
+    "main.45abc6ce.js.map": "/Kasa/static/js/main.45abc6ce.js.map"
   },
   "entrypoints": [
     "static/css/main.919d3c65.css",
-    "static/js/main.f1be89c9.js"
+    "static/js/main.45abc6ce.js"
   ]
 }
